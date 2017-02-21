@@ -24,6 +24,6 @@ public class MainVerticle extends AbstractVerticle {
     }
 
     private void helloWorld(RoutingContext routingContext) {
-        routingContext.response().end("hello world erwin");
+        routingContext.response().end("hello world erwin2");
     }
 }
