@@ -34,6 +34,28 @@
             <artifactId>vertx-circuit-breaker</artifactId>
             <version>${vertx-version}</version>
         </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-service-discovery-bridge-kubernetes</artifactId>
+            <version>${vertx-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-web</artifactId>
+            <version>${vertx-version}</version>
+            <classifier>client</classifier>
+            <type>js</type>
+        </dependency>
         <!--zookeeper discovery for hazelcast -->
         <dependency>
             <groupId>org.apache.curator</groupId>
