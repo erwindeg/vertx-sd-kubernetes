@@ -1,4 +1,4 @@
-# Example vertx app with kubernets integration
+# Example vertx app with kubernetes integration
 ## Deploy on openshift:
 oc new-app codecentric/springboot-maven3-centos~https://github.com/erwindeg/vertx-sd-kubernetes
 
