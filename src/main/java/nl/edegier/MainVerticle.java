@@ -51,7 +51,11 @@ public class MainVerticle extends AbstractVerticle {
         server.requestHandler(router::accept).listen(8080);
 
         vertx.setPeriodic(1000, t -> {
-            vertx.eventBus().publish("channel1", new JsonObject().put("message","hello"));
+            try {
+                vertx.eventBus().publish("channel1", new JsonObject().put("message","hello from"+InetAddress.getLocalHost().getHostAddress()));
+            } catch (UnknownHostException e) {
+                e.printStackTrace();
+            }
             System.out.println("send");
         });
 
