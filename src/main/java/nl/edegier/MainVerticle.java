@@ -52,7 +52,7 @@ public class MainVerticle extends AbstractVerticle {
 
         vertx.setPeriodic(1000, t -> {
             try {
-                vertx.eventBus().publish("channel1", new JsonObject().put("message","hello from"+InetAddress.getLocalHost().getHostAddress()));
+                vertx.eventBus().publish("channel1", new JsonObject().put("message","hello from "+InetAddress.getLocalHost().getHostAddress()));
             } catch (UnknownHostException e) {
                 e.printStackTrace();
             }
