@@ -4,6 +4,7 @@ You need Docker native app.
 
 # start openshift locally with docker
 oc cluster up 
+oc cluster up --image=registry.access.redhat.com/openshift3/ose --version=v3.4.1.5 --create-machine
 
 # login
 oc login -u system:admin
