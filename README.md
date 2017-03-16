@@ -1,8 +1,9 @@
 # Preparation
 You need the Openshift client (OC) for Windows or Mac.
+You need Docker native app.
 
 # start openshift locally with docker
-oc cluster up --image=registry.access.redhat.com/openshift3/ose --create-machine
+oc cluster up 
 
 # login
 oc login -u system:admin
