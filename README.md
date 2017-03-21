@@ -1,7 +1,7 @@
 # Preparation
-You need the Openshift client (OC) for Windows or Mac: v1.5.0
-You need Docker app 1.13.0
-We will be installing Openshift v3.4.1.5
+You need the Openshift client (OC) for Windows or Mac: v1.5.0  
+You need Docker app 1.13.0  
+We will be installing Openshift v3.4.1.5  
 
 # start openshift locally with docker
 oc cluster up --image=registry.access.redhat.com/openshift3/ose --version=v3.4.1.5 --create-machine
