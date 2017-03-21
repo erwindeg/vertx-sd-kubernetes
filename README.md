@@ -19,8 +19,8 @@ oc policy add-role-to-group view system:serviceaccounts -n vertx
 # Example vertx app with kubernetes integration
 ## Deploy on openshift:
 
-oc new-app codecentric/springboot-maven3-centos~https://github.com/erwindeg/vertx-sd-kubernetes --name="service1"
-oc new-app https://github.com/erwindeg/vertx-sd-kubernetes --name="service2" --image-stream=springboot-maven3-centos
+oc new-app codecentric/springboot-maven3-centos~https://github.com/erwindeg/vertx-sd-kubernetes --name="service1"  
+oc new-app https://github.com/erwindeg/vertx-sd-kubernetes --name="service2" --image-stream=springboot-maven3-centos  
 
 oc expose service/service1
 oc expose service/service2
