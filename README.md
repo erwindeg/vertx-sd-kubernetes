@@ -27,7 +27,7 @@ oc expose service/service2
 
 
 ## Start build
-oc start-build service1 -n vertx  
+oc start-build service1 -n vertx
 oc start-build service2 -n vertx
 
 
