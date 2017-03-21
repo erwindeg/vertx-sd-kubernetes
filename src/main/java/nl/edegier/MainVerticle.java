@@ -59,7 +59,6 @@ public class MainVerticle extends AbstractVerticle {
             System.out.println("send");
         });
 
-//        vertx.eventBus().consumer("channel1").handler(result ->System.out.println(result.body()));
     }
 
     private void helloWorld(RoutingContext routingContext) {

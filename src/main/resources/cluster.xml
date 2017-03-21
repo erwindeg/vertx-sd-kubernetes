@@ -35,9 +35,6 @@
             <discovery-strategies>
                 <discovery-strategy enabled="true"
                                     class="io.vertx.servicediscovery.hazelcast.HazelcastKubernetesDiscoveryStrategy">
-                    <properties>
-                        <!--<property name="namespace">clement-reactive-msa-demo</property>-->
-                    </properties>
                 </discovery-strategy>
             </discovery-strategies>
         </join>
