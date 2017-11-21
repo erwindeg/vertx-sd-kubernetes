@@ -120,6 +120,8 @@
                             </artifactSet>
                         <!--    <outputFile>${project.build.directory}/${project.artifactId}-${project.version}-fat.jar
                             </outputFile>-->
+                            <shadedArtifactAttached>true</shadedArtifactAttached>
+                            <shadedClassifierName>jar-with-dependencies</shadedClassifierName>
                         </configuration>
                     </execution>
                 </executions>

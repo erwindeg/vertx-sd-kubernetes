@@ -39,6 +39,8 @@
                 </transformer>
               </transformers>
               <artifactSet />
+              <shadedArtifactAttached>false</shadedArtifactAttached>
+              <shadedClassifierName>jar-with-dependencies</shadedClassifierName>
             </configuration>
           </execution>
         </executions>
